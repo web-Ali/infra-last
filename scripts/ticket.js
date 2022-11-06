@@ -24,7 +24,7 @@ ${(await getCommitMessagesBetweenTags(tags.slice(-2))).map(x => `\`${x.commit.su
     console.log(`INFO: Сформировали объект тикета для отправки в трекер:`)
     console.log(ticket)
 
-    let editResult = await api(`/v2/issues/${process.env.ISSUE}`, 'PATCH', ticket)
+    let editResult = await api(`/v2/issues/HOMEWORKSHRI-167`, 'PATCH', ticket)
 
     console.log('INFO: Получили ответ от трекера:')
     console.log(editResult)

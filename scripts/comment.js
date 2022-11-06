@@ -11,7 +11,7 @@ async function main()
         text:`Собрали образ с тегом rc:${version}`
     }
 
-    let commentResult = await api(`/v2/issues/${process.env.ISSUE}/comments`, 'POST', comment)
+    let commentResult = await api(`/v2/issues/HOMEWORKSHRI-167/comments`, 'POST', comment)
 
     console.log('INFO: Трекер создал комментарий:')
     console.log(commentResult)

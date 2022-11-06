@@ -6,7 +6,7 @@ const api = (path, method = 'GET', json) => new Promise(resolve =>
     let request = http.request(
         {
             host: `api.tracker.yandex.net`, path, method,
-            headers: {'Authorization': `OAuth ${process.env.TOKEN}`, 'X-Org-ID': `${process.env.ORG_ID}`}
+            headers: {'Authorization': `OAuth y0_AgAAAAA2_F4IAAiPagAAAADTKOiW4Z8_AeU4Qqm3bVTh30USRAOjuYw`, 'X-Org-ID': `52232defb5db44119cd5f5073ed68339`}
         }, 
         res => 
         {
